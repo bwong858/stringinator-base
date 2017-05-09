@@ -2,7 +2,7 @@ const stringinator = require('../../stringinator');
 
 describe('filterToOnlyDigits()', () => {
   it('filters to only digits when given a mixed alphanumeric string', () => {
-    const result = stringinator.filterToOnlyDigits('d8f848g84838cd8f');
+    const result = stringinator.filterToOnlyDigits('d8f848g 848 38cd8f\n');
     expect(result).toEqual('8848848388');
   });
 
